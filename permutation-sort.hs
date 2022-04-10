@@ -1,3 +1,5 @@
+--BogoSort, permutation sort, shortgun sort--
+--Similar to picking sorted cards from a deck of card--
 import Data.List (permutations)
 
 sorted :: Ord a => [a] -> Bool
