@@ -1,3 +1,4 @@
+--Quicksort uses divide and conquer technique for sorting--
 import Data.List (permutations)
 
 -- Return the list which contains elements less than or equal to the input element
@@ -7,6 +8,7 @@ smallerEq = \v -> \list ->
         [] -> []
         x:xs | x<=v -> x:smallerEq v xs
         _:xs -> smallerEq v xs
+        
 -- Return the list which contains elements greater than the specified element
 greater :: Int -> [Int] -> [Int]
 greater = \v -> \list ->
